@@ -6,6 +6,7 @@ return [
         'enabled'       => true,
         'sender_map'    => [
             '/no-reply@snei.sony.com/',
+            '/no-reply@sie.sony.com/',
         ],
         'body_map'      => [
             //

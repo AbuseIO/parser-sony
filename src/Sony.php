@@ -39,7 +39,7 @@ class Sony extends Parser
             if (strpos($subject, 'were blacklisted from the PlayStation Network') !== false){
                 $bodyLines = explode("\n",$body);
                 foreach($bodyLines as $line){
-                    if (preg_match('/(\d{4}-\d{2}-\d{2} \d{2}:\d{2}) ~ (\d{4}-\d{2}-\d{2} \d{2}:\d{2}) \(UTC\),\s+([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}),\s+(.+)/',
+                    if (preg_match('/(\d{4}-\d{2}-\d{2} \d{2}:\d{2}(?::\d{2})?) ~ (\d{4}-\d{2}-\d{2} \d{2}:\d{2}(?::\d{2})?) \(UTC\),\s+([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}),\s+(.+)/',
                         $line,
                         $matches)){
                         $report = [
